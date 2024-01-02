@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.76f29e45.css",
+    "main.js": "/static/js/main.5564e780.js",
+    "static/media/loading.gif": "/static/media/loading.23eef9168f0eb715f8eb.gif",
+    "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.5908ecb9ed942e5e61fa.eot",
+    "static/media/materialdesignicons-webfont.ttf?v=4.9.95": "/static/media/materialdesignicons-webfont.bbe05489cd38a31d1694.ttf",
+    "static/media/materialdesignicons-webfont.woff?v=4.9.95": "/static/media/materialdesignicons-webfont.da9606b68b5c8ac55cfb.woff",
+    "static/media/materialdesignicons-webfont.woff2?v=4.9.95": "/static/media/materialdesignicons-webfont.d9f39587ab2751b33bcf.woff2",
+    "static/media/register-bg.jpg": "/static/media/register-bg.951d161274c555a71985.jpg",
+    "static/media/lockscreen-bg.jpg": "/static/media/lockscreen-bg.5f5074b5d05fd6cd07f5.jpg",
+    "static/media/ss.png": "/static/media/ss.fa445cfc342172a7c991.png",
+    "static/media/login-bg.jpg": "/static/media/login-bg.7593b671c1b315317231.jpg",
+    "service-worker.js": "/service-worker.js",
+    "static/media/accept.mp3": "/static/media/accept.9bcac551ddce2d65c3b7.mp3",
+    "static/media/play.mp3": "/static/media/play.e913c1ac086a48ec50fe.mp3",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "index.html": "/index.html",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/global-bg-rays.svg": "/static/media/global-bg-rays.fc9982f8715f172c7ccd.svg",
+    "main.76f29e45.css.map": "/static/css/main.76f29e45.css.map",
+    "main.5564e780.js.map": "/static/js/main.5564e780.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76f29e45.css",
+    "static/js/main.5564e780.js"
+  ]
+}
