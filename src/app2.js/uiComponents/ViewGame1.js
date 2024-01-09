@@ -58,7 +58,7 @@ export default function ViewGame1(props) {
         socket.emit("challengeOngoing");
       })
       .catch((e) => {
-        if (e.response.status == 401) {
+        if (e.response.status === 401) {
           localStorage.removeItem("token");
           localStorage.removeItem("token");
           window.location.reload();

@@ -6,12 +6,12 @@ import findGif from "../css/loading_old.gif";
 import playSound from "./play.mp3";
 // const beckendLocalApiUrl = "http://localhost:4010/";
 const beckendLocalApiUrl = process.env.REACT_APP_BACKEND_LOCAL_API;
-const beckendLiveApiUrl = 'http://localhost:4010/';
+const beckendLiveApiUrl = process.env.REACT_APP_BACKEND_LOCAL_API;
 const nodeMode = 'development';
 if (nodeMode === "development") {
   var baseUrl = beckendLocalApiUrl;
 } else {
-  baseUrl = beckendLiveApiUrl;
+ var baseUrl = beckendLiveApiUrl;
 }
 const BetCard = React.memo(({ allgame, user, deleteChallenge, getPost, RejectGame, winnAmount, AcceptChallang, updateChallenge, waitingList, acceptBattle }) => {
   
@@ -134,22 +134,17 @@ const BetCard = React.memo(({ allgame, user, deleteChallenge, getPost, RejectGam
       {user !== allgame.waiting_room[0] && allgame.Status === "waiting" && 
         (<div className="d-flex ml-auto align-items-center">
 
-            {/* <Link to={{ pathname: `/viewgame1/${allgame.Battle_id}`, state: { prevPath: window.location.pathname } }} onClick={() => acceptBattle(allgame._id, allgame.Battle_id, allgame.Game_Ammount)}  style={{ bottom: '0' }}> */}
+            <Link to={{ pathname: `/viewgame1/${allgame.Battle_id}`, state: { prevPath: window.location.pathname } }} onClick={() => acceptBattle(allgame._id, allgame.Battle_id, allgame.Game_Ammount)}  style={{ bottom: '0' }}>
           <button 
             className={`bg-success position-relative mx-1 btn-sm text-white btn-inverse-success`}
-            onClick={() => acceptBattle(allgame._id, allgame.Battle_id, allgame.Game_Ammount)}
-          >
+            >
             Rs<span className={css.betCardAmount}>
             {allgame.Game_Ammount}
           </span> 
           </button>
-          {/* </Link> */}
-          {/* <button
-            className={`text-white bg-danger position-relative mx-1 btn-sm btn-outline-youtube`}
-            onClick={() => RejectGame(allgame._id)} style={{ bottom: '0' }}
-          >
-            REJECT
-          </button> */}
+         
+          </Link>
+        
         </div>
         )
         }

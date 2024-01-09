@@ -880,7 +880,7 @@ const acceptBattle = (id, battleId, Game_Ammount) =>{
         .then((res) => {
           console.log('Accepted Battle',res);
           socket.emit("gameCreated");
-          socket.emit("gameStarted", battleId);
+         
           if (res.data.msg === "you can not create same amount challenge.") {
             Swal.fire({
               title: "you can not create same amount challenge.",
@@ -907,16 +907,16 @@ const acceptBattle = (id, battleId, Game_Ammount) =>{
             });
           } else if (
             res.data.msg ===
-            "Game amount should be Greater then 50 and less then 10000"
+            "Game amount should be Greater then 50 and less then 100"
           ) {
             Swal.fire({
-              title: "Game amount should be Greater then 50 and less then 10000",
+              title: "Game amount should be Greater then 50 and less then 100",
               icon: "warning",
               confirmButtonText: "OK",
             });
-          } else if (res.data.msg === "Set Battle in denomination of 50") {
+          } else if (res.data.msg === "Set Battle in denomination of 5") {
             Swal.fire({
-              title: "Set Battle in denomination of 50",
+              title: "Set Battle in denomination of 5",
               icon: "warning",
               confirmButtonText: "OK",
             });
@@ -1162,7 +1162,7 @@ const acceptBattle = (id, battleId, Game_Ammount) =>{
             {created &&
               created.map(
                 (allgame) =>
-                  allgame.Game_type == game_type && (
+                  allgame.Game_type === game_type && (
                     <BetCard
                       key={allgame._id}
                       allgame={allgame}
